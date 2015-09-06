@@ -1,0 +1,123 @@
+@charset "UTF-8";
+.slide-d3 h2 {
+    margin-bottom: 1em;
+}
+
+.slide-d3 svg {
+    height: 500px;
+    width: 100%;
+}
+
+.chart-2 rect {
+    fill: steelblue;
+}
+
+.chart-2 text {
+    fill: white;
+    font: 10px sans-serif;
+    text-anchor: end;
+}
+
+path.slice{
+	stroke-width:2px;
+}
+polyline{
+	opacity: .3;
+	stroke: black;
+	stroke-width: 2px;
+	fill: none;
+}
+svg {
+        font: 10px sans-serif;
+} 
+
+svg text.percent{
+	fill: white;
+	text-anchor:middle;
+	font-size: 14px;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+rect {
+  fill: steelblue;
+}
+.area {
+  fill: steelblue;
+}
+
+.line {
+  fill: none;
+  stroke: blue;
+  stroke-width: 2px;
+}
+
+.blueline {
+  fill: none;
+  stroke: blue;
+  stroke-width: 2px;
+}
+
+.redline {
+  fill: none;
+  stroke: red;
+  stroke-width: 2px;
+}
+
+.greenline {
+  fill: none;
+  stroke: green;
+  stroke-width: 2px;
+}
+
+.orangeline {
+  fill: none;
+  stroke: orange;
+  stroke-width: 2px;
+}
+
+.line {
+  fill: none;
+  stroke-width: 2px;
+}
+
+.line.tchsum {
+  stroke: rgb(0,63,124);
+}
+
+.line.bspsum {
+  stroke: rgb(79,172,37);
+}
+
+.line.tchcnt {
+  stroke: rgb(43,167,224);
+}
+
+.line.bspcnt {
+  stroke: rgb(175,204,80);
+}
+
+rect.tchsum {
+  fill: rgb(0,63,124);
+}
+
+rect.bspsum {
+  fill: rgb(79,172,37);
+}
+
+rect.tchcnt {
+  fill: rgb(43,167,224);
+}
+
+rect.bspcnt {
+  fill: rgb(175,204,80);
+}
+
+.legend text {
+  font-size: 18px;
+}
