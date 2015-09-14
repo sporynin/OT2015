@@ -1527,11 +1527,26 @@ aside.gdbar img {
   flex-wrap: nowrap;
   justify-content: space-between;
   align-content: center;
-  align-items: center;
+  align-items: flex-start;
+}
+
+.flex-2-justify {
+  justify-content: space-around;
 }
 
 .flex-2__child {
-  order: 0;
   flex: 0 1 auto;
-  align-self: auto;
+}
+
+.flex-2__child-vcenter {
+  align-self: center;
+}
+
+.flex-2__child-vcenter {
+  text-align: center;
+}
+
+.with-back {
+  background-size: cover;
+  color: #000;
 }
