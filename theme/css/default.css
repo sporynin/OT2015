@@ -1558,3 +1558,20 @@ aside.gdbar img {
 slide {
   text-align: center;
 }
+
+.flex-fullheight {
+  height: 100%;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: center;
+  align-items: flex-start;
+}
+
+.flex-row {
+  flex: 1 1 auto;
+}
