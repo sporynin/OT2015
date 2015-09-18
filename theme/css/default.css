@@ -1575,3 +1575,12 @@ slide {
 .flex-row {
   flex: 1 1 auto;
 }
+
+.with-back h1 {
+  padding: 5px 10px;
+  border-radius: 10px;
+  background-color: rgba(0,0,0,0.15);
+  color: #fff;
+  font-size: 45px;
+  text-shadow: 0 0 6px #000;
+}
