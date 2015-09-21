@@ -1,0 +1,138 @@
+body {
+  opacity: 1 !important;
+  background: #fff !important;
+  overflow: visible !important;
+}
+/* line 1014, ../scss/default.scss */
+
+slides {
+  position: relative !important;
+}
+
+slides slide,
+slides.layout-widescreen > slide,
+slides.layout-faux-widescreen > slide,
+slides.layout-widescreen > slide.far-past,
+slides.layout-faux-widescreen > slide.far-past,
+slides.layout-widescreen > slide.past,
+slides.layout-faux-widescreen > slide.past,
+slides.layout-widescreen > slide.current,
+slides.layout-faux-widescreen > slide.current,
+slides.layout-widescreen > slide.next,
+slides.layout-faux-widescreen > slide.next,
+slides > slide.current,
+slides > slide.far-past,
+slides > slide.past,
+slides > slide.next,
+slides > slide.far-next,
+slides > slide.dark {
+  display: block !important;
+  position: relative !important;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(85%, #ffffff), color-stop(100%, #e6e6e6));
+  background: -webkit-linear-gradient(#ffffff, #ffffff 85%, #e6e6e6);
+  background: -moz-linear-gradient(#ffffff, #ffffff 85%, #e6e6e6);
+  background: -o-linear-gradient(#ffffff, #ffffff 85%, #e6e6e6);
+  background: linear-gradient(#ffffff, #ffffff 85%, #e6e6e6);
+  background-color: white;
+  -webkit-transform: none !important;
+  -moz-transform: none !important;
+  -ms-transform: none !important;
+  -o-transform: none !important;
+  transform: none !important;
+  width: 100% !important;
+  height: 100% !important;
+  page-break-after: always;
+  page-break-inside: avoid;
+  top: auto !important;
+  left: auto !important;
+  margin-left: 0 !important;
+  margin-top: 0 !important;
+  opacity: 1 !important;
+  color: #555;
+}
+
+/* line 1034, ../scss/default.scss */
+slides slide.far-past, slides slide.past, slides slide.next, slides slide.far-next, slides slide.far-past, slides slide.current {
+  opacity: 1 !important;
+  display: block !important;
+}
+/* line 1040, ../scss/default.scss */
+slides slide .build > * {
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+/* line 1045, ../scss/default.scss */
+slides slide .build .to-build,
+slides slide .build .build-fade {
+  opacity: 1;
+}
+/* line 1050, ../scss/default.scss */
+slides slide .auto-fadein {
+  opacity: 1 !important;
+}
+/* line 1054, ../scss/default.scss */
+slides > slide:not(.nobackground):after,
+slides slide.backdrop {
+  display: none !important;
+}
+/* line 1058, ../scss/default.scss */
+slides slide table.rows {
+  border-right: 0;
+}
+/* line 1063, ../scss/default.scss */
+slides slide[hidden] {
+  display: none !important;
+}
+
+/* line 1068, ../scss/default.scss */
+.slide-area {
+  display: none;
+}
+
+/* line 1072, ../scss/default.scss */
+.reflect {
+  -webkit-box-reflect: none;
+  -moz-box-reflect: none;
+  -o-box-reflect: none;
+  -ms-box-reflect: none;
+  box-reflect: none;
+}
+
+/* line 1080, ../scss/default.scss */
+pre, code {
+  font-family: monospace !important;
+}
+
+.build > *,
+.build .to-build,
+.build .build-fade {
+  -webkit-transition: none !important;
+  -webkit-transition-delay: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+  opacity: 1 !important;
+  display: block !important;
+  position: relative;
+  background-color: white;
+  -webkit-transform: none !important;
+  -moz-transform: none !important;
+  -ms-transform: none !important;
+  -o-transform: none !important;
+  transform: none !important;
+}
+
+slides slide ul.build.nobullets {
+  border: 1px solid red;
+}
+
+slides slide ul.nobullets li {
+  width: 45%;
+    border: 1px solid green;
+}
+  
+slides slide ul.build.nobullets.fade li {
+  display: inline-block !important;
+}
