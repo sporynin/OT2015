@@ -1,6 +1,6 @@
 window.addEventListener("load", function() {
 
-var xd = ["cheap", "flex", "standart"];
+var xd = ["flex", "cheap", "standart"];
 var svg = d3.select("#speedchart")
             .attr("width", width + margin.left + margin.right)
             .attr("height", height + margin.top + margin.bottom)
@@ -14,7 +14,9 @@ var color = d3.scale.ordinal().range(["blue", "green", "red"]).domain(xd);
 var xAxis = d3.svg.axis().scale(x).orient("bottom");
 var yAxis = d3.svg.axis().scale(y).orient("right");
 
-var data0 = [ {name: "cheap", y: 448}, {name: "flex", y: 440}, {name: "standart", y:500} ];
+var data0 = [ {name: "flex", y: 3.38, comment: "2.3+1.0/0.93" }, 
+              {name: "cheap", y: 3.39, comment: "2.0+1.0/0.73"}, 
+              {name: "standart", y: 3.69, comment: "2.3+1.0/0.73"} ];
 x.domain(xd);
 y.domain([0, d3.max(data0, function(d) { return d.y; })]);
 /*
@@ -53,6 +55,12 @@ svg.append("path").data(data3).attr("class", "line red").attr("d", line3);
       .attr("height", function(d) { return height - y(d.y); })
       .attr("width", x.rangeBand())
       .style("fill", function(d) { return "url(#gr" + d.name + ")"; });
+
+  bar.append("text")
+      .attr("x", x.rangeBand() / 3)
+      .attr("y", function(d) { return y(d.y) ; })
+      .attr("dy", "1em")
+      .text(function(d) { return d.comment; });
 
   svg.append("g")
       .attr("class", "x axis")
